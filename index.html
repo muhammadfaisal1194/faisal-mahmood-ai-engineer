@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faisal Mahmood — Full-Stack AI Engineer</title>
+<meta name="description" content="8 years shipping production-grade software — AI automation, fintech platforms, and full-stack engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE4; --fg:#15181F; --muted:#5B6472; --accent:#B97F27;
+    --line:#D8D0BE; --surface:#EAE3D3;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11151C; --fg:#F3EEE4; --muted:#9199A6; --accent:#E8A33D;
+      --line:#262E3A; --surface:#171C25;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11151C; --fg:#F3EEE4; --muted:#9199A6; --accent:#E8A33D;
+    --line:#262E3A; --surface:#171C25;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    margin:0; background:var(--bg); color:var(--fg); font-family:var(--font-body);
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+    line-height:1.55;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+  h1,h2{font-family:var(--font-display); font-weight:600; line-height:1.12; margin:0;}
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  nav{
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    padding:22px 24px; border-bottom:1px solid var(--line); flex-wrap:wrap;
+  }
+  nav .name{font-family:var(--font-display); font-size:1.05rem;}
+  nav .links{display:flex; gap:20px; font-size:.92rem;}
+  nav .links a{text-decoration:none; color:var(--muted);}
+  nav .links a:hover{color:var(--fg);}
+
+  .hero{padding:72px 0 56px;}
+  .hero h1{font-size:clamp(2rem, 4.6vw, 2.9rem); max-width:19ch;}
+  .hero .sub{color:var(--muted); font-size:1.08rem; max-width:56ch; margin:18px 0 30px;}
+  .wave{display:flex; align-items:flex-end; gap:4px; height:30px; margin-bottom:26px;}
+  .wave span{width:4px; background:var(--accent); border-radius:2px; animation:w 1.1s ease-in-out infinite;}
+  .wave span:nth-child(1){height:40%; animation-delay:0s;}
+  .wave span:nth-child(2){height:90%; animation-delay:.1s;}
+  .wave span:nth-child(3){height:55%; animation-delay:.2s;}
+  .wave span:nth-child(4){height:100%; animation-delay:.3s;}
+  .wave span:nth-child(5){height:65%; animation-delay:.4s;}
+  .wave span:nth-child(6){height:35%; animation-delay:.5s;}
+  @keyframes w{0%,100%{transform:scaleY(.4);} 50%{transform:scaleY(1);}}
+  @media (prefers-reduced-motion: reduce){ .wave span{animation:none;} }
+
+  .cta-row{display:flex; gap:12px; flex-wrap:wrap;}
+  .btn{display:inline-block; padding:13px 22px; border-radius:3px; font-size:.95rem; text-decoration:none; font-weight:500;}
+  .btn.primary{background:var(--accent); color:var(--bg);}
+  .btn.ghost{border:1px solid var(--line); color:var(--fg);}
+
+  section{padding:46px 0; border-top:1px solid var(--line);}
+  section h2{font-size:1.45rem; margin-bottom:8px;}
+  section .lede{color:var(--muted); margin-bottom:26px; max-width:55ch;}
+
+  .card{margin-bottom:24px; padding-left:18px; border-left:2px solid var(--accent);}
+  .card h3{font-family:var(--font-display); font-weight:600; font-size:1.1rem; margin:0 0 4px;}
+  .card .meta{color:var(--muted); font-size:.85rem; margin-bottom:8px;}
+  .card p{color:var(--fg); font-size:.95rem; margin-bottom:0;}
+  .card ul{margin:0; padding-left:18px; font-size:.95rem;}
+  .card li{margin-bottom:6px;}
+
+  .skills-row{margin-bottom:12px; font-size:.95rem;}
+  .skills-row strong{font-weight:600;}
+  .skills-row span{color:var(--muted);}
+
+  footer{padding:50px 0 60px;}
+  footer h2{margin-bottom:10px;}
+  footer .lede{margin-bottom:26px;}
+  .contact-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .contact-row a{border:1px solid var(--line); padding:11px 18px; border-radius:3px; text-decoration:none; font-size:.92rem;}
+  .foot-note{margin-top:40px; color:var(--muted); font-size:.82rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="name">Faisal Mahmood</div>
+  <div class="links">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="wave"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <h1>8 years shipping production-grade software.</h1>
+    <p class="sub">From AI automation tools that save users 90 minutes a day, to a fintech platform managing hundreds of millions in live bids. I lead teams, rescue failing codebases, and build systems that stay stable after delivery.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:muhammadfaisal1194@gmail.com">Get in touch</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/dev-faisal-mahmood/" target="_blank" rel="noopener">View LinkedIn</a>
+    </div>
+  </div>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Full-Stack AI Engineer (Freelance)</h3>
+      <div class="meta">Upwork · Remote · 2022 – Present</div>
+      <ul>
+        <li>Delivered an AI email assistant that cut manual drafting time 90% for 20 active business users — it became stable enough that the client shut down ongoing development entirely.</li>
+        <li>Engineering lead for a private capital markets platform handling $1.2B+ in live bids and offers, onboarding 400+ institutional investors globally.</li>
+        <li>Built a multi-agent orchestration engine chaining specialized AI agents into conditional workflows with self-correction and shared memory.</li>
+        <li>Prototyped voice AI assistants, automated video generation tools, and competitive intelligence agents to validate new product directions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Frontend Developer</h3>
+      <div class="meta">Unblinked · Seoul, South Korea (Remote) · 2022</div>
+      <p>Owned the entire UI for an AI-powered quantitative crypto trading platform, letting non-technical users design and deploy automated strategies. Set up CI/CD and cloud infrastructure from scratch, shipping every 15 days.</p>
+    </div>
+
+    <div class="card">
+      <h3>Full-Stack Engineer</h3>
+      <div class="meta">Frag Games · Lahore, Pakistan · Jul 2021 – Mar 2022</div>
+      <p>Built an NFT marketplace with secure wallet integration and real-time transactions. Designed highly available cloud architecture with zero-downtime deployments; mentored junior engineers on the MERN stack.</p>
+    </div>
+
+    <div class="card">
+      <h3>Team Lead / MERN Developer</h3>
+      <div class="meta">Argon Technologies · Lahore, Pakistan · Sep 2020 – Jun 2021</div>
+      <p>Took over a failing influencer marketing platform, refactored the state layer to fix performance bottlenecks, and stabilized it for production. Led a team of 5, introducing Git workflows, CI/CD, and agile rituals.</p>
+    </div>
+
+    <div class="card">
+      <h3>Software Engineer</h3>
+      <div class="meta">CodeCradle Technologies · Bahawalpur, Pakistan · Jun 2018 – Sep 2020</div>
+      <p>Delivered full-cycle web applications across industries — UIs through secure payment integrations — owning requirements through deployment on cloud and VPS infrastructure.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Key Projects</h2>
+
+    <div class="card">
+      <h3>EmailManager</h3>
+      <p>An AI assistant that reads incoming emails, searches company knowledge bases, and drafts context-aware replies. Reached production stability with strict data isolation across tenants.</p>
+    </div>
+
+    <div class="card">
+      <h3>SwiftRun</h3>
+      <p>A platform that lets users stitch together multiple AI agents into automated workflows — conditional routing, retries, and self-critique without human intervention.</p>
+    </div>
+
+    <div class="card">
+      <h3>DealOwl</h3>
+      <p>A Bloomberg-style terminal for private capital markets. Live deal postings, due diligence data rooms, video pitches, and real-time bidding — currently scaling to thousands of institutional users.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-row"><strong>AI Engineering</strong> — <span>RAG systems, multi-agent orchestration, LLM integration, LangChain / LangGraph</span></div>
+    <div class="skills-row"><strong>Full-Stack</strong> — <span>Modern JavaScript/TypeScript, server-side frameworks, relational and document databases</span></div>
+    <div class="skills-row"><strong>Cloud Infrastructure</strong> — <span>AWS, containerization, CI/CD, Linux system administration</span></div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <h3>B.E. Computer Systems Engineering</h3>
+      <div class="meta">Islamia University of Bahawalpur · 2014 – 2018</div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Let's talk</h2>
+    <p class="lede">Open to full-time roles, contract work, and AI/automation builds.</p>
+    <div class="contact-row">
+      <a href="mailto:muhammadfaisal1194@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/dev-faisal-mahmood/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/muhammadfaisal1194" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://wa.me/923029020269" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p class="foot-note">Bahawalpur, Pakistan · +92 302 9020269 · Open to remote and relocation</p>
+  </footer>
+</div>
+
+</body>
+</html>
